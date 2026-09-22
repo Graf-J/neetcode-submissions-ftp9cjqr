@@ -1,0 +1,37 @@
+class Solution:
+    def countBits(self, n: int) -> List[int]:
+        result = []
+        for i in range(n + 1):
+            result.append(bin(i).count('1'))
+
+        return result
+
+
+
+
+
+# 4  3  2  1
+# 8, 4, 2, 1
+
+# log2(7) = floor(3.77) = 3
+
+
+
+# 0000    0
+# 0001    1
+# 0010    1
+# 0011    2
+
+# 0100    1
+# 0101    2
+# 0110    2
+# 0111    3
+
+# 1000    1
+# 1001    2
+# 1010    2
+# 1011    3
+# 1100    2
+# 1101    3
+# 1110    3
+# 1111    4
